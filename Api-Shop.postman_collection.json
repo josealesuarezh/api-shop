@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "6bf74c76-5db9-4bdd-9ee1-40ca96c312f9",
+		"name": "Api-Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14186112"
+	},
+	"item": [
+		{
+			"name": "Dar entrada a lista de productos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"nombre\": \"illum\",\r\n        \"numero_serie\": 170977,\r\n        \"precio_compra\": 1940.08,\r\n        \"precio_venta\": 7524.17,\r\n        \"existencia\": 192\r\n    },\r\n    {\r\n        \"nombre\": \"iusto\",\r\n        \"numero_serie\": 994539,\r\n        \"precio_compra\": 2320.15,\r\n        \"precio_venta\": 11126.88,\r\n        \"existencia\": 738\r\n    },\r\n    {\r\n        \"nombre\": \"ut\",\r\n        \"numero_serie\": 29,\r\n        \"precio_compra\": 4381.86,\r\n        \"precio_venta\": 9398.24,\r\n        \"existencia\": 789\r\n    },\r\n    {\r\n        \"nombre\": \"dolorem\",\r\n        \"numero_serie\": 627,\r\n        \"precio_compra\": 2654.17,\r\n        \"precio_venta\": 6774.05,\r\n        \"existencia\": 944\r\n    },\r\n    {\r\n        \"nombre\": \"ipsam\",\r\n        \"numero_serie\": 2922,\r\n        \"precio_compra\": 1199.09,\r\n        \"precio_venta\": 4786.43,\r\n        \"existencia\": 560\r\n    },\r\n    {\r\n        \"nombre\": \"nemo\",\r\n        \"numero_serie\": 9922772,\r\n        \"precio_compra\": 5948.14,\r\n        \"precio_venta\": 15008.740000000002,\r\n        \"existencia\": 10,\r\n        \"updated_at\": \"2023-01-05T14:36:52.000000Z\",\r\n        \"created_at\": \"2023-01-05T14:36:52.000000Z\",\r\n        \"id\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Dar entrada a lista de productos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"nombre\": \"illum\",\r\n        \"numero_serie\": 170977,\r\n        \"precio_compra\": 1940.08,\r\n        \"precio_venta\": 7524.17,\r\n        \"existencia\": 192\r\n    },\r\n    {\r\n        \"nombre\": \"iusto\",\r\n        \"numero_serie\": 994539,\r\n        \"precio_compra\": 2320.15,\r\n        \"precio_venta\": 11126.88,\r\n        \"existencia\": 738\r\n    },\r\n    {\r\n        \"nombre\": \"ut\",\r\n        \"numero_serie\": 29,\r\n        \"precio_compra\": 4381.86,\r\n        \"precio_venta\": 9398.24,\r\n        \"existencia\": 789\r\n    },\r\n    {\r\n        \"nombre\": \"dolorem\",\r\n        \"numero_serie\": 627,\r\n        \"precio_compra\": 2654.17,\r\n        \"precio_venta\": 6774.05,\r\n        \"existencia\": 944\r\n    },\r\n    {\r\n        \"nombre\": \"ipsam\",\r\n        \"numero_serie\": 2922,\r\n        \"precio_compra\": 1199.09,\r\n        \"precio_venta\": 4786.43,\r\n        \"existencia\": 560\r\n    },\r\n    {\r\n        \"nombre\": \"nemo\",\r\n        \"numero_serie\": 9922772,\r\n        \"precio_compra\": 5948.14,\r\n        \"precio_venta\": 15008.740000000002,\r\n        \"existencia\": 10,\r\n        \"updated_at\": \"2023-01-05T14:36:52.000000Z\",\r\n        \"created_at\": \"2023-01-05T14:36:52.000000Z\",\r\n        \"id\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Listar productos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar productos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:39:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:39:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"nombre\": \"illum\",\n            \"numero_serie\": \"170977\",\n            \"precio_compra\": 1940.08,\n            \"precio_venta\": 7524.17,\n            \"existencia\": 192,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"iusto\",\n            \"numero_serie\": \"994539\",\n            \"precio_compra\": 2320.15,\n            \"precio_venta\": 11126.88,\n            \"existencia\": 738,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"nombre\": \"ut\",\n            \"numero_serie\": \"29\",\n            \"precio_compra\": 4381.86,\n            \"precio_venta\": 9398.24,\n            \"existencia\": 789,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"nombre\": \"dolorem\",\n            \"numero_serie\": \"627\",\n            \"precio_compra\": 2654.17,\n            \"precio_venta\": 6774.05,\n            \"existencia\": 944,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"nombre\": \"ipsam\",\n            \"numero_serie\": \"2922\",\n            \"precio_compra\": 1199.09,\n            \"precio_venta\": 4786.43,\n            \"existencia\": 560,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"nombre\": \"nemo\",\n            \"numero_serie\": \"9922772\",\n            \"precio_compra\": 5948.14,\n            \"precio_venta\": 15008.74,\n            \"existencia\": 10,\n            \"created_at\": \"2023-01-05T14:37:27.000000Z\",\n            \"updated_at\": \"2023-01-05T14:37:27.000000Z\"\n        }\n    ],\n    \"first_page_url\": \"http://localhost:8000/api/productos?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://localhost:8000/api/productos?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost:8000/api/productos?page=1\",\n            \"label\": \"1\",\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://localhost:8000/api/productos\",\n    \"per_page\": 15,\n    \"prev_page_url\": null,\n    \"to\": 6,\n    \"total\": 6\n}"
+				}
+			]
+		},
+		{
+			"name": "Procesar factura",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Factura procesada",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productos\": [\r\n        {\r\n            \"id\": 2,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"cantidad\": 5\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/factura",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"factura"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:45:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:45:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Factura procesada correctamente\"\n}"
+				},
+				{
+					"name": "Cantidad insuficiente",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productos\": [\r\n        {\r\n            \"id\": 2,\r\n            \"cantidad\": 50000000\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"cantidad\": 5\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/factura",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"factura"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:45:40 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:45:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \" No hay suficiente cantidad de illum en el inventario\"\n}"
+				},
+				{
+					"name": "Producto inexistente",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productos\": [\r\n        {\r\n            \"id\": 1,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"cantidad\": 5\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"cantidad\": 5\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/factura",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"factura"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:53:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jan 2023 14:53:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"El producto con id 1  no existe en el inventario\",\n    \"errors\": {\n        \"productos.0.id\": [\n            \"El producto con id 1  no existe en el inventario\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Obtener Reporte",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
